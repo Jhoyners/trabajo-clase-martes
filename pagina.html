@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>MF-GYM</title>
+</head>
+<body onclick="PlayAudio()">
+    <img src="./pictures/Diseño sin título.jpg" alt="Logo MF-GYM" class="logo">
+    <nav class="titulo">
+        <h1>MF-GYM COLOMBIA</h1>
+    </nav>
+
+    <nav class="introduccion">
+        <p>Gracias por preferir a MF-GYM en tu camino hacia una vida mas saludable, has tomado la mejor decision.
+        </p>
+        <p>Llevamos mas de 15 años apoyando el progreso de los Colombianos hacia una vida menos sedentaria y estamos orgullosos de que hagas parte de esto.
+        </p>
+        <p>En MF-GYM nos preocupamos no solo por la calidad de nuestras instalaciones, sino que tambien nos centramos en enseñar con una calidad humana inigualable.
+        </p>
+        <p>Tenemos 3 planes diseñados que se adaptan a todas tus necesidades, por lo que antes de elegir un plan te recomendamos leer atentamente cada beneficio que este trae.</p>
+        <p>Contamos con sedes en Medellin, Bogota, Cali, Bucaramanga, Barranquilla, Ibague, Cucuta, Pereira y Santa Marta.
+        </p>
+        <h2>Estos son nuestros planes:</h2>
+    </nav>
+
+    <nav element id="planclassic">
+        <h3 class="classic">CLASSIC</h3>
+        <P>Este plan es el mas basico si lo que deseas es tener un estilo de vida mas saludable y apenas estas empezando a obtener una rutina, este plan te permitira un avance progresivo pero no invasivo ni abrumador. Por lo que es el mas recomendado para principiantes. Esto es lo que incluye el plan de una forma mas detallada:</P>
+
+        <ul style="list-style: none;">
+            <li>Acceso ilimitado a la instalacion que elijas.</li>
+            <li>Acceso a nuestro programa de entrenamiento diario.</li>
+            <li>Entrenador personal.</li>
+            <li>Clases de baile, yoga y boxeo.</li>
+            <li>Acceso a los casilleros.</li>
+            <li>Podras invitar a 3 personas al mes.</li>
+            <li>Incluyte tu tarjeta de acceso color amarilla</li>
+            <p>$59.999 al mes</p>
+            
+        </ul>
+    </nav>
+
+    <nav element id="planpro"></div>
+        <h3 class="pro">PRO</h3>
+        <P>Este plan esta diseñado para personas mas avanzadas y que les motiva aun mas el mundo fitness. En este plan podras ahondar de una manera mas profesional en todos los ejercicios a realizar, contaras con dietas personalizadas  y con nuestros entrenadores de mas alto nivel. Este es el plan de una forma mas detallada:</P>
+
+        <ul style="list-style: none;">
+            <li>Acceso ilimitado a todas las instalaciones de tu ciudad.</li>
+            <li>Acceso a nuestro programa de entrenamiento diario.</li>
+            <li>Entrenador personal de maxima categoria.</li>
+            <li>Incluye dietas personalizadas para cada tipo de entrenamiento.</li>
+            <li>Acceso a nuestra tienda de suplementos.</li>
+            <li>Clases de baile, yoga y boxeo.</li>
+            <li>Acceso a los casilleros.</li>
+            <li>Podras invitar a 5 personas al mes.</li>
+            <li>Incluyte tu tarjeta de acceso color roja.</li>
+            <p>$74.999 al mes</p>
+            <p>Este plan cuenta con una fidelidad de 6 meses.</p>
+        </ul>
+    </nav>
+
+    <nav element id="planbodybuilder"></div>
+        <h3 class="bodybuilder">BODY BUILDER</h3>
+        <P>Este plan esta diseñado para aquellos que desean llevar su cuerpo al maximo nivel, para aquellos que les apasiona el mundo del fisico culturismo y quieren hacer parte de el. Con este plan lograras tu maximo potencial ya que esta pensado para que sea completamente personalizado, contando con la capacidad de hacerte estudios medicos para un entrenamiendo efectivo. Este es el plan de una forma mas detallada:</P>
+
+        <ul style="list-style: none;">
+            <li>Acceso ilimitado a todas las instalaciones en todo el pais.</li>
+            <li>Estudios medicos gratis para crear un plan completamente personalizado</li>
+            <li>Acceso a nuestro programa de entrenamiento diario.</li>
+            <li>Entrenador personal de maxima categoria.</li>
+            <li>Incluye dietas personalizadas para cada tipo de entrenamiento.</li>
+            <li>Acceso a gratuito a nuestra tienda de suplementos con un limite diario.</li>
+            <li>Clases de baile, yoga y boxeo.</li>
+            <li>Clases para aprender a posar en competiciones</li>
+            <li>Acceso a los casilleros premium.</li>
+            <li>Podras invitar a 7 personas al mes.</li>
+            <li>Incluyte tu tarjeta de acceso color negra.</li>
+            <p>$149.999 al mes.</p>
+            <p>Este plan cuenta con una fidelidad de 12 meses.</p>
+        </ul>
+    </nav>
+
+    <nav element id="planescogido">
+        <h3>¿YA SABES QUE PLAN ESCOGER?</h3>
+        <p>Una vez tengas tu plan en mente, solo hace falta completar este pequeño cuestinario para asi empezar con tu proceso de inscripcion.</p>
+        <form>
+            <label for="name">Nombre:</label> 
+            <input type="text" id="name" name="name" required> 
+
+            <label for="lastname">Apellido:</label> 
+            <input type="text" id="lastname" name="lastname" required> 
+
+            <label for="email">Correo electrónico:</label> 
+            <input type="email" id="email" name="email" required> 
+
+            <label for="phone">Número de teléfono:</label> 
+            <input type="phone" id="phone" name="phone" required> 
+        </form>
+
+        <p></p>
+
+        <form>
+            <label for="plan">Plan escogido:</label>
+            <select id="plan" name="plan" required>
+                <option value="">Seleccione un plan</option>
+                <option value="classic">Classic</option>
+                <option value="pro">Pro</option>
+                <option value="bodybuilder">Body Builder</option>
+            </select>
+
+            <label for="sede">Sede escogida:</label>
+            <select id="sede" name="sede" required>
+                <option value="">Seleccione una sede</option>
+                <option value="medellin">Medellin</option>
+                <option value="cali">Cali</option>
+                <option value="bogota">Bogota</option>
+                <option value="bucaramanga">Bucaramanga</option>
+                <option value="barranquilla">Barranquilla</option>
+                <option value="ibague">Ibague</option>
+                <option value="cucuta">Cucuta</option>
+                <option value="pereira">Pereira</option>
+                <option value="santamarta">Santa Marta</option>
+            </select>
+            
+            <label for="horario">Horario de preferencia:</label>
+            <input type="time" id="horario" name="horario" required> - <input type="time" id="horario" name="horario" required>
+            <p></p>
+            <button>Completado</button>
+        </form>
+
+        <p>Una vez finalizado este pequeño cuestinario, un agente se comunicara contigo para finalizar tu proceso de inscripcion.</p>
+        <p>*En caso de escoger el plan BODY BUILDER, sera necesario hacerte unas cuantas preguntas mas.*</p>
+        
+        <p>Nuevamente, gracias por escogernos en este nuevo camino que emprenderas hacia una vida mas saludable.</p>
+        
+        <img src="./pictures/pexels-pqeue.jpg" alt="">
+    </nav>
+
+    <nav element id="agradecimiento">
+        <h4>Nuevamente, gracias por escogernos en este nuevo camino que emprenderas hacia una vida mas saludable.</h4>
+        <p>Puedes de que daremos nuestro mejor esfuerzo para que alncances esa meta que tanto deseas.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Si deseas tener una pequeña induccion sobre nuestro programa, puedes mirar el siguiente video dando click <a href="https://youtu.be/xESS0f9qaEo?si=e7RBkPVb82RzY93b" target="_blank">aqui</a></p>
+    </nav>
+
+    <audio id="audio1" loop>
+    <source src="music/lazy-day-stylish-futuristic-chill-239287.mp3">
+    </audio>
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("audio1").play();
+        }
+    </script>
+</body>
+
+
+<footer>
+    <p>Copyright 2021 MF-GYM COLOMBIA. Todos los derechos reservados.</p>
+    <p>Contactanos: <a href="mailto:mf-gym@gmail.com">mf-gym@gmail.com</a></p>
+    <p>Nuestro horario de atención es de lunes a viernes de 9:00 a 20:00</p>
+    <p>Si tienes algun inconveniente comunicate al siguiente numero: 2134141</p>
+</footer>
+
+</html>
